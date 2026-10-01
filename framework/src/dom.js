@@ -1,4 +1,4 @@
-// Martin: DOM rendering, reusable components, attributes, forms, and events.
+// Tanel: DOM rendering, reusable components, attributes, forms, and events.
 const TEXT = Symbol("text");
 // Every mounted application is kept here so redraw() can update it.
 const mounts = new Set();

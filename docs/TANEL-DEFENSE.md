@@ -1,4 +1,4 @@
-# Martin's defense guide
+# Tanel's defense guide
 
 ## My responsibility
 

@@ -15,7 +15,7 @@ The public API is assembled by `src/dot.js` from three team-owned modules and ha
 
 The design favors plain JavaScript, one-way data flow, explicit state updates, and browser standards. Dot owns the render lifecycle, making it a framework rather than a collection of unrelated helpers. There is no build step, JSX compiler, runtime dependency, or hidden global store.
 
-Team ownership is documented in the repository's `TEAM.md`: Martin maintains `dom.js`, Alex maintains `state-router.js`, and Matis maintains `http-performance.js` plus example integration.
+Team ownership is documented in the repository's `TEAM.md`: Tanel maintains `dom.js`, Alex maintains `state-router.js`, and Matis maintains `http-performance.js` plus example integration.
 
 ## Installation
 

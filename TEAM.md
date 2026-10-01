@@ -2,11 +2,11 @@
 
 The framework is divided into three independently owned parts. `framework/src/dot.js` combines them into one stable public API, so the example application continues to work without import changes.
 
-## Martin — DOM, components, and events
+## Tanel — DOM, components, and events
 
 Primary file: `framework/src/dom.js`
 
-Martin owns:
+Tanel owns:
 
 - `h()` virtual-node descriptions
 - `component()` reusable components and props
@@ -16,9 +16,9 @@ Martin owns:
 - Delegated events
 - `mount()`, rendering, and redraw scheduling
 
-Suggested branch: `feature/martin-dom-components`
+Suggested branch: `feature/tanel-dom-components`
 
-Defense preparation: [Martin's defense guide](docs/MARTIN-DEFENSE.md)
+Defense preparation: [Tanel's defense guide](docs/TANEL-DEFENSE.md)
 
 ## Alex — State and routing
 
@@ -62,9 +62,9 @@ Defense preparation: [Matis's defense guide](docs/MATIS-DEFENSE.md)
 
 Each person writes tests and documentation for their own feature. Before merging, another member reviews the branch. Use this integration order:
 
-1. Martin's DOM module
+1. Tanel's DOM module
 2. Alex's state and router module
 3. Matis's HTTP/performance module and example
 4. All three run `npm test` and manually test the example together
 
-The important boundary is that Alex imports only `h` and `redraw` from Martin's module. Matis's virtual list uses the generic `renderDOM(createNode)` extension supplied by Martin's renderer. The example imports only from `framework/src/index.js`, never from an owner's private module.
+The important boundary is that Alex imports only `h` and `redraw` from Tanel's module. Matis's virtual list uses the generic `renderDOM(createNode)` extension supplied by Tanel's renderer. The example imports only from `framework/src/index.js`, never from an owner's private module.
