@@ -18,6 +18,8 @@ Martin owns:
 
 Suggested branch: `feature/martin-dom-components`
 
+Defense preparation: [Martin's defense guide](docs/MARTIN-DEFENSE.md)
+
 ## Alex — State and routing
 
 Primary file: `framework/src/state-router.js`
@@ -32,6 +34,8 @@ Alex owns:
 - Programmatic navigation, links, and browser history
 
 Suggested branch: `feature/alex-state-routing`
+
+Defense preparation: [Alex's defense guide](docs/ALEX-DEFENSE.md)
 
 ## Matis — HTTP, performance, and integration
 
@@ -51,6 +55,8 @@ Matis owns:
 - End-to-end checks
 
 Suggested branch: `feature/matis-http-example`
+
+Defense preparation: [Matis's defense guide](docs/MATIS-DEFENSE.md)
 
 ## Shared work
 

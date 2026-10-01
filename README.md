@@ -19,3 +19,9 @@ Open <http://localhost:4173>. Run automated checks with `npm test`. Set `PORT` t
 Read the [framework guide](framework/README.md) for architecture, examples, API details, best practices, and suggested review extensions.
 
 For the three-person ownership plan, see [TEAM.md](TEAM.md): Martin owns DOM/components/events, Alex owns state/routing, and Matis owns HTTP/performance/example integration.
+
+## Defense guides
+
+- [Martin — DOM, components, and events](docs/MARTIN-DEFENSE.md)
+- [Alex — state and routing](docs/ALEX-DEFENSE.md)
+- [Matis — HTTP, performance, and integration](docs/MATIS-DEFENSE.md)
