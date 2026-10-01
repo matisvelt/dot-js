@@ -1,0 +1,25 @@
+/* Basic page colors and font settings. */
+:root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; color: #20221f; background: #f2f0e9; font-synthesis: none; }
+* { box-sizing: border-box; } body { margin: 0; } button, input { font: inherit; }
+
+/* Shared page width and top navigation. */
+.shell { width: min(920px, calc(100% - 32px)); margin: auto; }
+header { height: 82px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #d3d0c7; }
+.brand { color: #20221f; font-size: 24px; font-weight: 800; text-decoration: none; letter-spacing: -.06em; }.brand span { color: #ea5b35; }
+nav { display: flex; gap: 24px; } nav a { color: #65665f; font-size: 14px; text-decoration: none; } nav a:hover { color: #20221f; }
+main { padding: 70px 0 100px; }.hero { max-width: 650px; margin-bottom: 40px; }.eyebrow { color: #ea5b35; font-size: 12px; font-weight: 800; letter-spacing: .15em; }
+
+/* Main headings and task input form. */
+h1 { font-family: Georgia, serif; font-size: clamp(42px, 7vw, 72px); line-height: .98; letter-spacing: -.045em; margin: 13px 0 18px; font-weight: 500; } .hero > p:last-child, .page-heading > p:last-child { color: #696b64; font-size: 18px; line-height: 1.6; }
+.composer { display: flex; background: white; padding: 8px; border: 1px solid #dedbd2; box-shadow: 0 12px 35px #493f2920; }.composer input { flex: 1; border: 0; padding: 12px 14px; outline: 0; min-width: 0; }
+.button { border: 0; padding: 12px 20px; cursor: pointer; background: #20221f; color: white; }.button:hover { background: #ea5b35; }.button.quiet { background: transparent; color: #20221f; border: 1px solid #bbb8af; }.button:disabled { opacity: .55; }
+
+/* Task filters and task rows. */
+.toolbar { display: flex; justify-content: space-between; align-items: center; margin: 28px 0 12px; color: #77786f; font-size: 13px; }.filters { display: flex; gap: 4px; }.filters button { border: 0; background: transparent; padding: 7px 11px; text-transform: capitalize; cursor: pointer; }.filters button.active { background: #dedbd2; }
+.tasks { margin: 0; padding: 0; list-style: none; border-top: 1px solid #d4d1c8; }.tasks li { display: flex; align-items: center; gap: 16px; min-height: 62px; border-bottom: 1px solid #d4d1c8; }.tasks li span { flex: 1; }.tasks li.done span { color: #96978f; text-decoration: line-through; }.check { width: 22px; height: 22px; border: 1px solid #aaa99f; background: transparent; cursor: pointer; }.done .check { background: #20221f; color: white; }.delete { border: 0; background: transparent; font-size: 24px; color: #999990; cursor: pointer; }.delete:hover { color: #ea5b35; }.empty { color: #77786f; text-align: center; padding: 35px; }
+
+/* Remote data box, virtual list, and About page. */
+.quote { margin-top: 54px; padding: 26px; display: flex; align-items: center; justify-content: space-between; gap: 30px; background: #e4e1d8; }.quote p { color: #65665f; margin: 6px 0 0; }.page-heading { max-width: 760px; margin-bottom: 40px; }.page-heading h1 { font-size: clamp(38px, 6vw, 62px); }.dot-lazy-list { border: 1px solid #ccc8bc; background: #f7f5ef; }.virtual-row { height: 52px; display: flex; align-items: center; gap: 25px; padding: 0 20px; border-bottom: 1px solid #dfdcd2; }.virtual-row span { color: #a4a39b; font: 12px ui-monospace, monospace; }.about { max-width: 700px; }.text-link { color: #ea5b35; font-weight: 700; }
+
+/* Stack a few parts vertically on small screens. */
+@media (max-width: 620px) { nav { gap: 12px; } main { padding-top: 45px; }.quote { align-items: stretch; flex-direction: column; }.composer .button { padding-inline: 14px; } }
